@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+
+ul {
+  list-style: none;
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+  height: 4rem;
+  background-color: hsl(200, 50%, 50%);
+  padding-left: 1rem;
+}
+
+nav > ul > li {
+  color: #eee;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+nav > ul > li:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main > h1 {
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+main > input {
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  width: 20rem;
+  padding-block: 0.25rem;
+  padding-inline: 0.125rem;
+}
+
+.card-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.card {
+  width: 8rem;
+  aspect-ratio: 1/2;
+}
+
+.card > p {
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+  margin-top: 0.15rem;
+}
+
+.image-container {
+  background-color: #999;
+  aspect-ratio: 2/3;
+  display: grid;
+  grid-template-areas: "a";
+  border-radius: 0.4rem;
+  overflow: clip;
+}
+
+.image-container > * {
+  grid-area: a;
+}
+
+.image-container > h2 {
+  align-self: end;
+  justify-self: center;
+  color: #eee;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 0.25rem;
+}
+
+.image-container > .overlay {
+  background-image: linear-gradient(to bottom, #0000, #0007);
+}
+
+.card-image {
+  background-size: cover;
+  background-position: center;
+}
+
+#land-image {
+  background-image: url("https://cards.scryfall.io/art_crop/front/4/0/40a2804d-d925-4950-8542-608f6e92387a.jpg?1562847979");
+}
+
+#creature-image {
+  background-image: url("https://cards.scryfall.io/art_crop/front/d/7/d7ce9104-0ad3-4d3d-bb2c-c456c25030f6.jpg?1601080108");
+}
+
+#spell-image {
+  background-image: url("https://cards.scryfall.io/art_crop/front/2/0/20b5fe42-929c-406d-9377-40b49f9d2e2c.jpg?1673149167");
+}
+
+#archetype-image {
+  background-image: url("https://cards.scryfall.io/art_crop/front/1/7/17416926-168b-49b3-9231-acbb8f8a1d13.jpg?1557577188");
+}
+
+#color-image {
+  background-image: url("https://cards.scryfall.io/art_crop/front/4/e/4eafa4f8-3b9b-4e20-97bf-8f547e970752.jpg?1562911486");
+}
